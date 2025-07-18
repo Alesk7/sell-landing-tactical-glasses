@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тактические очки поляризационные</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Exo+2:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="assets/main.png" alt="Интерактивная игрушка для кошек" class="hero-img">
+            <div class="hero-text">
+                <h1>Тактические очки</h1>
+            </div>
+            <div class="hero-features">
+                <div class="hero-feature-item">
+                    <i class="fas fa-eye"></i>
+                    <span>4 пары сменных линз</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fas fa-sun"></i>
+                    <span>Поляризация</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Защита от УФ лучей</span>
+                </div>
+                <div class="hero-feature-item">
+                    <i class="fas fa-box-open"></i>
+                    <span>Большая комплектация</span>
+                </div>
+            </div>
+        </div>
+        <button class="cta-button hero-cta" onclick="scrollToOrder()">Заказать</button>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают наши очки</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Поляризация, материал и защита</h3>
+                    <p class="feature-text">Изготовлены из прочного поликарбоната с защитой от ультрафиолета UV400 и
+                        поляризацией для максимальной защиты глаз</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="feature-title">Расширенная комплектация</h3>
+                    <p class="feature-text">4 пары сменных линз для всех условий, чехлы, ремешки, уплотнитель,
+                        микрофибра и проверочная карта на поляризацию</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">Универсальность</h3>
+                    <p class="feature-text">Идеальны для спорта, рыбалки, пейнтбола, мотокросса, вождения и работы в
+                        любых условиях</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-section">
+        <div class="full-width-image">
+            <img src="assets/img1.png" alt="" class="full-width-img">
+        </div>
+    </section>
+
+    <section class="img2-section">
+        <img src="assets/img2.png" alt="" class="img2-special">
+    </section>
+
+    <section class="reviews-section" id="reviewsSection">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Очки удобные , спасают от комаров, мух, мошек. Когда едешь на велосипеде
+                        просто не заменимы."</p>
+                    <p class="review-author">- Павел</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Очки просто класс!!! Мне очень понравились! Сидят отлично, от солнца хорошо
+                        защищают. Комплектация вся на месте. За такую цену это просто подарок👍"</p>
+                    <p class="review-author">- Евгения</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Отличные полярики, шикарные!!!!"</p>
+                    <p class="review-author">- Василий</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-section">
+        <div class="container">
+            <div class="price-container">
+                <div class="price-info">
+                    <div class="price-old">60 BYN</div>
+                    <div class="price-new">40 BYN</div>
+                </div>
+                <div class="timer-container">
+                    <p class="timer-label">До конца акции осталось:</p>
+                    <div class="timer" id="timer">
+                        <div class="timer-item">
+                            <span class="timer-number" id="days">00</span>
+                            <span class="timer-label">дней</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="hours">00</span>
+                            <span class="timer-label">часов</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="minutes">00</span>
+                            <span class="timer-label">минут</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number" id="seconds">00</span>
+                            <span class="timer-label">секунд</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <div class="container">
+            <h2 class="section-title">Закажите <span class="product-name">тактические очки</span> сейчас!</h2>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+                </div>
+                <button type="submit" class="cta-button">Заказать</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
